@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <item name="common_id_lv" type="id">common_id_lv</item>
+    <item name="common_id_btn_back" type="id">common_id_btn_back"</item>
+    <item name="common_id_ll_loading" type="id">common_id_ll_loading"</item>
+    <item name="common_id_ll_loading2" type="id">common_id_ll_loading2"</item>
+    <item name="common_id_empty_layout" type="id">common_id_empty_layout"</item>
+    <item name="photoCats_id" type="id">photoCats_id"</item>
+    
+    <!-- 扫码相关的id -->
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+
+    <item type="id" name="tag_first"></item>
+    <item type="id" name="tag_second"></item>
+    <item type="id" name="tag_third"></item>
+</resources>

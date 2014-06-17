@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_three_white_ffffff_normal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+       android:background="@color/base_white_edf1f4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/txt_pic_upload_taken"
+            android:textColor="@color/base_gray_595959"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.intel.store.widget.MyGridView
+        android:id="@+id/gv_thumbnails"
+        android:background="@color/base_three_white_ffffff_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:fadingEdgeLength="0dip"
+        android:horizontalSpacing="10dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" /> 
+
+</LinearLayout>

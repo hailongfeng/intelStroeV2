@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10.0dip"
+    android:background="@color/base_white_ffffff_normal"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:background="@drawable/shape_line" />
+    <LinearLayout
+        android:id="@+id/linear_password_change_select"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/personal_txt_change_password"
+            android:textColor="@color/v3_black"
+            android:textSize="@dimen/text_middle" />
+
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/arraw_gray_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_logout_select"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/personal_txt_log_out"
+            android:textColor="@color/v3_black"
+            android:textSize="@dimen/text_middle" />
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/arraw_gray_right" />
+    </LinearLayout>
+
+  	<LinearLayout
+  	    android:layout_height="wrap_content"
+  	    android:layout_width="fill_parent"
+  	    android:visibility="gone"
+  	    android:orientation="vertical">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_clean_select"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title_height"
+            android:src="@drawable/personal_004" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/personal_txt_clear_crash"
+            android:textColor="#ff545454"
+            android:textSize="@dimen/text_middle" />
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/arraw_gray_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_privacy_policy"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title_height"
+            android:src="@drawable/personal_privacy_policy" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/personal_txt_private"
+            android:textColor="#ff545454"
+            android:textSize="@dimen/text_middle" />
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/arraw_gray_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_update_select"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title_height"
+            android:src="@drawable/personal_info_update" />
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.0"
+            android:text="@string/personal_txt_update_check"
+            android:textColor="#ff545454"
+            android:textSize="@dimen/text_middle" />
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/arraw_gray_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title_height"
+            android:src="@drawable/gps" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.0"
+            android:text="@string/personal_txt_gps_open"
+            android:textColor="#ff545454"
+            android:textSize="@dimen/text_middle" />
+
+        <CheckBox
+            android:id="@+id/cb_gps"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_gravity="right|center_vertical"
+            android:button="@drawable/checkbox_selector" />
+    </LinearLayout>
+    <!-- 第二个白框end -->
+</LinearLayout>
+</LinearLayout>

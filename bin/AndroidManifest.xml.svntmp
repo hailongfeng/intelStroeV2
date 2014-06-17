@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.intel.store"
+    android:versionCode="1"
+    android:versionName="1.2.4.2" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <application
+        android:name="com.intel.store.StoreApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/intel_logo_2"
+        android:label="@string/app_name"
+        android:logo="@drawable/store_action_bar_home_logo"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52a7ca2e56240b612b08944d" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="英特尔官网" />
+        
+        <activity
+            android:name="com.intel.store.view.init.InitialActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.intel.store.view.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreImageShowActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.webview.PrivacyPolicyActivity"
+            android:label="@string/txt_private_define"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.intel.store.view.StoreSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_txt_store_choice"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_txt_store_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.PhotoZoomActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreImageDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.TakePictureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreImageTypeListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.PhotoUploadDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.PhotoUploadPreviewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.PersonalInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/personal_txt_personal_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.setting.StoreSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/action_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.setting.SettingAboutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/setting_about_app"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.setting.SettingFunIntro"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/setting_fun_intro"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.PasswordChangeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/personal_txt_change_password"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreSalesCountActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.ProductFindActivityOld"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.webview.ProductFindActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_product_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreIntegralActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/txt_store_integral_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.LatestExerciseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.ExerciseDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreMyClerkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/store_txt_clerks"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreMyClerkAddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/clerk_txt_title_add"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreImageDateListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreMyClerkDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/clerk_txt_title_detail"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreMyClerkEditActivity"
+            android:label="@string/clerk_txt_title_edit"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.ScanIdentificationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.webview.SaleWordsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.ProductDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.ProductAddTypeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreIrepLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_txt_store_irep_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreSalesReporteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreSalesReporteHistoryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.SaleReportDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.SaleReportDetailUploadedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.webview.IrepStudyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/irep_study_txt_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreImageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_txt_store_images_show"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreImageRecentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_txt_store_images_show"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreImageRoundDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_txt_store_images_show"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.view.StoreImageShowByTypeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/main_txt_store_images_show"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 所有测试的activity写在下面，方便最后删除 -->
+        <activity
+            android:name="com.intel.store.test.BarCodeTestActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.intel.store.test.LoadingViewActivity" >
+        </activity>
+        <activity android:name="com.intel.store.test.LocationActivity" >
+        </activity>
+        <activity
+            android:name="com.intel.store.test.IrepTestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intel.store.test.LocalDBTestActivity"
+            android:label="@string/title_activity_local_dbtest" >
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.intel.store.test.HtmlTestActivity"
+            android:label="@string/title_activity_html_test" >
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.intel.store.test.WebViewUpFileActivity"
+            android:label="@string/title_activity_web_view_up_file" >
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <!-- 扫码调用的activity -->
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <service
+            android:name="com.pactera.framework.client.NotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="NotificationService" >
+            <intent-filter>
+                <action android:name="com.intel.framework.client.NotificationService" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name="com.intel.store.view.NotificationDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.intel.framework.notification_details_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 百度定位service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <service android:name="com.intel.store.service.UpgradeService" />
+        
+    </application>
+</manifest>

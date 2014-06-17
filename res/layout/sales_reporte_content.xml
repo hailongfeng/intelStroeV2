@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_gray_e0e6ea"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/title_height_small"
+        android:paddingRight="@dimen/title_height_small"
+        android:paddingTop="@dimen/padding_medium"
+
+        android:paddingBottom="@dimen/title_height" >
+
+        <LinearLayout
+               android:layout_marginTop="@dimen/title_height_small"
+            android:id="@+id/ll_sales_reporte_exercise_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sales_reporte_active_id_"
+                android:textColor="@color/base_gray_595959"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_exercise_id"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/base_white_ffffff_normal"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:paddingBottom="@dimen/padding_smaller"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_smaller"
+                android:singleLine="true"
+                android:textColor="@color/login_edt_txt"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sales_reporte_code_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_height_small"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sales_reporte_bar1"
+                android:textColor="@color/base_gray_595959"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edt_scan_first"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/base_white_ffffff_normal"
+                    android:editable="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:singleLine="true"
+                    android:textColor="@color/login_edt_txt"
+                    android:textSize="16sp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_scan_first"
+                    style="@style/MyTextOfTitleShort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/scan_action" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sales_reporte_code_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_height_small"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sales_reporte_bar2"
+                android:textColor="@color/base_gray_595959"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edt_scan_second"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/base_white_ffffff_normal"
+                    android:editable="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:singleLine="true"
+                    android:textColor="@color/login_edt_txt"
+                    android:textSize="16sp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_scan_second"
+                    style="@style/MyTextOfTitleShort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/scan_action" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sales_reporte_submit"
+        style="@style/MyTextOfTitleMiddle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/title_height"
+        android:layout_marginRight="@dimen/title_height"
+        android:layout_marginTop="@dimen/padding_large"
+        android:text="@string/sales_reporte_reporte" />
+
+</LinearLayout>

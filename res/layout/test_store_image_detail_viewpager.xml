@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_white_ffffff_normal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/new_base_blue_0089d6" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_centerVertical="true"  android:layout_margin="@dimen/padding_small" style="@style/BackButtonStyle" />
+
+        <TextView
+            android:id="@+id/txt_title_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="图片详情"
+            android:textColor="@color/base_white_ffffff_normal"
+            android:textSize="20sp"
+             />
+
+        <Button  android:layout_centerVertical="true"
+            android:id="@+id/btn_delete"
+            android:text="删除"
+             android:layout_margin="@dimen/padding_small" style="@style/RightButtonStyle" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layout_introduction"
+        android:layout_below="@+id/layout_title"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_introduction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/base_white_ffffff_normal"
+        android:orientation="vertical" >
+  		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+		<ImageView
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+            android:id="@+id/function_man"
+            android:layout_width="@dimen/photo_upload_thumbnail_width"
+            android:layout_height="@dimen/photo_upload_thumbnail_height"
+            android:src="@drawable/myclerk_pic" />
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/txt_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/function_man"
+                android:layout_marginTop="15dip"
+                android:gravity="right"
+                android:lines="1"
+                android:textColor="@color/base_gray_595959"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/txt_user"
+                android:layout_toRightOf="@+id/function_man"
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:lines="1"
+                android:textColor="@color/base_gray_a2a9ae"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:id="@+id/txt_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:minLines="3"
+            android:textColor="@color/base_gray_595959"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textSize="20sp" />
+
+      
+
+        <com.intel.store.widget.LoadingView
+            android:id="@id/common_id_ll_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#10000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </com.intel.store.widget.LoadingView>
+    </LinearLayout>
+
+</RelativeLayout>

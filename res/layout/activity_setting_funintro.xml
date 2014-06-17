@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.intel.shangbanla.view.setting.SettingFunIntro" >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        android:text="零售宝1.0主要更新:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        android:text="点击页面左上方个人中心可查看个人资料、修改密码等"
+        android:textColor="@color/v3_gray"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+   <LinearLayout 
+       android:layout_height="wrap_content"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+       
+       <ImageView 
+           android:src="@drawable/fun1"
+           android:layout_weight="1.0"
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent"/>
+       <ImageView 
+          android:src="@drawable/fun2"
+           android:layout_weight="1.0"
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent"/>
+   </LinearLayout>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        android:textColor="@color/v3_gray"
+        android:text="修改密码点击个人中心的“修改密码”栏即可"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+   <LinearLayout 
+       android:layout_height="wrap_content"
+       android:layout_width="fill_parent"
+       android:orientation="horizontal">
+       
+       <ImageView 
+           android:src="@drawable/fun3"
+           android:layout_weight="1.0"
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent"/>
+       <ImageView 
+          android:src="@drawable/fun4"
+           android:layout_weight="1.0"
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent"/>
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_white_ffffff_normal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_medium" >
+
+    <LinearLayout
+        android:id="@+id/linear_clerk_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MyTextOfTitleShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/txt_name"
+            android:textColor="@color/base_gray_595959" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_txt_input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edt_clerk_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:maxEms="8"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/padding_small"
+                android:singleLine="true"
+                android:textColor="@color/login_edt_txt"
+                android:textSize="@dimen/text_middle" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_clerk_position"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     	android:padding="@dimen/padding_small"
+        android:clickable="true"
+        android:background="@color/base_gray_e0e6ea"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MyTextOfTitleShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/txt_post"
+            android:textColor="@color/base_gray_595959" />
+
+        <TextView
+            android:id="@+id/tv_clerk_position"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_small"
+            android:singleLine="true"
+            android:text="@string/txt_rsp"
+            android:textColor="@color/login_edt_txt"
+            android:textSize="@dimen/text_middle" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_clerk_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+  		 android:padding="@dimen/padding_small"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MyTextOfTitleShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/txt_phonenumber"
+            android:textColor="@color/base_gray_595959" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_txt_input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edt_clerk_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/padding_small"
+                android:singleLine="true"
+                android:textColor="@color/login_edt_txt"
+                android:textSize="@dimen/text_middle" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_clerk_home_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     	android:padding="@dimen/padding_small"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MyTextOfTitleShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/txt_email"
+            android:textColor="@color/base_gray_595959" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_txt_input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edt_clerk_email_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/padding_small"
+                android:singleLine="true"
+                android:textColor="@color/login_edt_txt"
+                android:textSize="@dimen/text_middle" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

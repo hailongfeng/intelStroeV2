@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/new_base_blue_0089d6"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_centerVertical="true"  android:layout_margin="@dimen/padding_small" style="@style/BackButtonStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/scan_idification"
+                android:textColor="@color/base_white_ffffff_normal"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    
+    <Button
+        android:id="@+id/btn_scan"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_medium"
+        android:layout_gravity="center_vertical"
+        android:text="@string/scan" >
+    </Button>
+
+    <TextView
+        android:layout_margin="@dimen/padding_medium"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/base_blue_0289b9_normal"
+        android:id="@+id/txt_result"
+        android:text="@string/scan_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+</LinearLayout>

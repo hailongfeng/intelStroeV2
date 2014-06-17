@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+ <body>
+  <form method="post" name="form1" action="http://10.12.49.45:8080/imageUpload_UAT/rspImagUploadServlet" enctype="multipart/form-data">
+  <input type="file" name="filename" id="filename" accept="image/gif, image/jpeg" />
+  <!-- 
+ 		params.put("sessionId", Constants.Session);
+        params.put("slsprs_id", pictureItem.mSlsprsId);
+        params.put("store_id", pictureItem.mStoreId);
+        params.put("last_update_time", pictureItem.mWhen);
+        params.put("photo_comment", pictureItem.mComment);
+        params.put("loc_longitude", pictureItem.mLongitude);
+        params.put("loc_latitude", pictureItem.mLatitude);
+        params.put("role_id", pictureItem.mRoleId);
+        params.put("photo_cat", "" + pictureItem.mCategoryId);
+        params.put("rep_id", "" + pictureItem.mRep_id);
+        if ("10".equals(pictureItem.mCategoryId)) {
+            params.put("mdl_id", "" + pictureItem.mModelId);
+        }
+        if ("78".equals(pictureItem.mRoleId)) {
+            params.put("cityType", pictureItem.mCityType);
+        }
+        params.put("stor_addr", pictureItem.mStoreAddr);
+ -->
+
+ <input type="hidden" name="sessionId" value="d2b28ff5d3b9a809e978aa36feccad61" />
+ <input type="hidden" name="slsprs_id" value="53825" />
+ <input type="hidden" name="store_id" value="99801" />
+ <input name="last_update_time" type="hidden" value="1399884525495" />
+ <input name="photo_comment" type="hidden" value="aaaa" />
+ <input name="loc_longitude" type="hidden" value="" />
+ <input name="loc_latitude" type="hidden" value="" />
+ <input name="role_id" type="hidden" value="77" />
+ <input name="photo_cat" type="hidden" value="30" />
+ <input name="rep_id" type="hidden" value="53825" />
+ <input name="mdl_id" type="hidden" value="" />
+ <input name="cityType" type="hidden" value="" />
+ <input name="stor_addr" type="hidden" value="" />
+  <INPUT type="Submit" value="提 交" name="submit1" id="submit1" >
+</form>
+ </body>
+</html>

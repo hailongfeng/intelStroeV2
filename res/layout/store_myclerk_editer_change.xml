@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_medium" >
+
+    <LinearLayout
+        android:id="@+id/linear_clerk_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_gray_e0e6ea"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small" >
+
+        <TextView
+            style="@style/MyTextOfTitleShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/personal_txt_name"
+            android:textColor="@color/v3_gray" />
+
+        <TextView
+            android:id="@+id/edt_clerk_name"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_small"
+            android:singleLine="true"
+            android:text="@string/txt_rsp"
+            android:textColor="@color/v3_gray"
+            android:textSize="@dimen/text_middle" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_clerk_position"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_gray_e0e6ea"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small" >
+
+        <TextView
+            style="@style/MyTextOfTitleShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/personal_txt_position"
+            android:textColor="@color/v3_gray" />
+
+        <TextView
+            android:id="@+id/tv_clerk_position"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_small"
+            android:singleLine="true"
+            android:text="@string/txt_rsp"
+            android:textColor="@color/v3_gray"
+            android:textSize="@dimen/text_middle" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_clerk_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small" >
+
+        <TextView
+            style="@style/MyTextOfTitleShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/personal_txt_telephone"
+            android:textColor="@color/v3_blue_soft" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_txt_input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edt_clerk_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/padding_small"
+                android:singleLine="true"
+                android:textColor="@color/v3_black"
+                android:textSize="@dimen/text_middle" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_clerk_home_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small" >
+
+        <TextView
+            style="@style/MyTextOfTitleShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/personal_txt_email"
+            android:textColor="@color/v3_blue_soft" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_txt_input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edt_clerk_email_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/padding_small"
+                android:singleLine="true"
+                android:textColor="@color/v3_black"
+                android:textSize="@dimen/text_middle" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+</LinearLayout>

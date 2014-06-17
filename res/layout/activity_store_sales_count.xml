@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@color/base_three_white_ffffff_normal"
+    android:layout_height="fill_parent" >
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@id/common_id_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="5dp"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dip"
+        android:fastScrollEnabled="true"
+        android:horizontalSpacing="15dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="15dp" >
+    </ListView>
+    <com.intel.store.widget.LoadingView
+        android:id="@id/common_id_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </com.intel.store.widget.LoadingView>
+    <include 
+        layout="@layout/empty_layout"/>
+</FrameLayout>

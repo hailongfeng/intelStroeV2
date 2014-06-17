@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_white_ffffff_normal"
+    android:orientation="vertical" >
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/inc_photo_upload_preview_title"
+        layout="@layout/common_title_with_right_btn_delete" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:id="@+id/imgBigPicture"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+</LinearLayout>

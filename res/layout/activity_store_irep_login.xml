@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.intel.store.view.StoreMyClerkActivity" >
+  <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+                <LinearLayout
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/common_rectangle_bg"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:orientation="vertical" >
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="50.0dp"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15.0dp" >
+                            <TextView
+                                android:id="@+id/txt_login_img_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="用户名"
+                                android:textColor="@color/base_gray_595959"
+                                android:textSize="18sp" />
+                            <EditText
+                                android:id="@+id/edt_login_username"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="15.0dp"
+                                android:layout_toRightOf="@+id/txt_login_img_account"
+                                android:background="@null"
+                                android:singleLine="true" />
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@drawable/shape_devide_line" />
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="50.0dp"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15.0dp" >
+                            <TextView
+                                android:id="@+id/txt_login_img_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="密    码"
+                                android:textSize="18sp" />
+                            <EditText
+                                android:id="@+id/edt_login_password"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="15.0dp"
+                                android:layout_toRightOf="@+id/txt_login_img_password"
+                                android:background="@null"
+                                android:inputType="textPassword"
+                                android:maxLength="32"
+                                android:singleLine="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dp"
+                        android:layout_marginTop="@dimen/padding_medium" >
+                        <Button
+                            android:id="@+id/btn_login_ok"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/login_btn_bg_selector"
+                            android:text="@string/ibtn_login"
+                            android:textColor="@color/base_three_white_ffffff_normal" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dp"
+                        android:layout_marginTop="@dimen/padding_medium" >
+                        <Button
+                            android:id="@+id/btn_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_register_selector"
+                            android:text="@string/irep_txt_register"
+                            android:textColor="@color/base_three_white_ffffff_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+        <com.intel.store.widget.LoadingView
+            android:id="@id/common_id_ll_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </com.intel.store.widget.LoadingView>
+    </FrameLayout>
+</LinearLayout>

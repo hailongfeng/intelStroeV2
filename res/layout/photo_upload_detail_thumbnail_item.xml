@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/ibtn_thumbnail"
+        android:layout_width="@dimen/photo_upload_thumbnail_width"
+        android:layout_height="@dimen/photo_upload_thumbnail_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="matrix" />
+
+    <com.intel.store.widget.ScrollAlwaysTextView
+        android:id="@+id/txt_thumbnail_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibtn_thumbnail"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxWidth="@dimen/photo_upload_thumbnail_width"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white_edf1f4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:background="@color/base_white_ffffff_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edt_product_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/product_find_txt_hint"
+                android:maxEms="8"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="@color/login_edt_txt" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:background="@color/new_base_blue_0071c5"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/btn_product_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/search" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@id/common_id_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/shape_line"
+            android:dividerHeight="1dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dip"
+            android:fastScrollEnabled="true"
+            android:horizontalSpacing="15dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="15dp" >
+        </ListView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_empty"
+        layout="@layout/empty_layout"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cds="http://schemas.android.com/apk/res-auto" >
+ 		<item
+        android:id="@+id/action_bar_menu_item_more"
+        android:orderInCategory="103"
+        android:title="历史季度       "
+        cds:showAsAction="always"/>
+</menu>

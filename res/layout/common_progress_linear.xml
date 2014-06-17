@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_progress"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/translucent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+   
+    <com.intel.store.widget.LoadingView
+        android:id="@id/common_id_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#10000000"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </com.intel.store.widget.LoadingView>
+
+</LinearLayout>

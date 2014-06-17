@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:src="@null"
+        android:scaleType="centerCrop" />
+    
+     <com.intel.store.widget.ScrollAlwaysTextView
+        android:id="@+id/txt_category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="@dimen/padding_small"
+        android:textColor="@color/base_white_ffffff_normal"
+        android:background="@color/new_base_blue_0071c5"
+        android:gravity="center"
+        android:singleLine="true"
+	    android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="@string/test_text"
+        />
+
+</LinearLayout>

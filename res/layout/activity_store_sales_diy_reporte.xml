@@ -1,0 +1,202 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StoreSalesCountActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_sales_reporte_code_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@color/base_three_gray_b1babf"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/sales_reporte_code"
+                            android:textColor="@color/base_three_white_ffffff_normal" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal" >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/common_txt_input_bg" >
+                                <EditText
+                                    android:id="@+id/edt_scan_first"
+                                    android:layout_width="190dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@color/transparent"
+                                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+                            </LinearLayout>
+                            <Button
+                                android:id="@+id/btn_scan_first"
+                                android:layout_width="40dp"
+                                android:layout_height="fill_parent"
+                                android:background="@color/new_base_blue_0071c5"
+                                android:gravity="center"
+                                android:text="@string/scan_action"
+                                android:textColor="@color/base_white_ffffff_normal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_bg"
+                        android:orientation="vertical" >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp" >
+                            <TextView
+                                android:id="@+id/txt_store_sales_count_store_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="门店名称"
+                                android:textColor="@color/base_three_blue_0071c5"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/shape_devide_line" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp" >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="上季度销量"
+                                    android:textColor="@color/base_three_blue_00aeef"
+                                    android:textSize="18sp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical" >
+                                <TextView
+                                    android:id="@+id/txt_store_sales_count_last"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="中国盒申报数量：" />
+                                <TextView
+                                    android:id="@+id/txt_store_last_quarter_all_sales"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/txt_store_sales_count_last"
+                                    android:text="100盒" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical" >
+                                <TextView
+                                    android:id="@+id/txt_store_sales_count_last"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="core i5+core i7：" />
+                                <TextView
+                                    android:id="@+id/txt_store_last_quarter_por"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/txt_store_sales_count_last"
+                                    android:text="300颗" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical" >
+                                <TextView
+                                    android:id="@+id/txt_store_sales_count_last"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="core申报数量：" />
+                                <TextView
+                                    android:id="@+id/txt_store_last_quarter_sales_rate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/txt_store_sales_count_last"
+                                    android:text="300颗" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical" >
+                        <com.intel.store.widget.MyGridView
+                            android:id="@+id/gv_thumbnails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:cacheColorHint="#00000000"
+                            android:divider="@null"
+                            android:dividerHeight="0dip"
+                            android:fadingEdgeLength="0dip"
+                            android:horizontalSpacing="10dp"
+                            android:listSelector="#00000000"
+                            android:numColumns="3"
+                            android:scrollbars="none"
+                            android:verticalSpacing="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent" >
+                    <Button
+                        android:id="@+id/btn_sales_reporte_submit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/login_btn_bg_selector"
+                        android:text="@string/sales_reporte_save"
+                        android:textColor="@color/base_white_ffffff_normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.intel.store.widget.LoadingView
+        android:id="@id/common_id_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#10000000"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </com.intel.store.widget.LoadingView>
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+        android:background="@color/base_white_ffffff_normal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/new_base_blue_0089d6"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/BackButtonStyle"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/padding_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/personal_txt_personal_title"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <!-- 第一个白框end -->
+
+        <include layout="@layout/personal_info_details" />
+
+        <!-- 第二个白框begin -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:orientation="vertical" >
+
+                <include layout="@layout/personal_info_operators" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.intel.store.widget.LoadingView
+        android:id="@id/common_id_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </com.intel.store.widget.LoadingView>
+
+</FrameLayout>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    *                   {font-family: verdana;}
+    body                {font-size: 16px;}
+
+    #loginBox           {border: #c0c0c0 1px solid; padding: 10px; font-size: 12px; display: inline-block;}
+    #title              {background: #c00000; color: #ffffff; font-weight: bold; padding: 5px; text-align: center; margin-bottom: 15px;}
+    #participantCheck   {display: inline-block; background: #888; padding: 4px 26px 4px 26px; color: #ffffff;}
+    #listOutput         {padding: 0px 20px;max-width:480px;}
+    #frameOutput        {width: 320px; height: 568px; border: #c0c0c0 1px solid; display: none;}
+ 	.listOutputDiv  {position:relative;}
+ 	.listOutputDiv img  {width: 90px;margin-right: 10px; margin-bottom: 10px; border: #c0c0c0 1px solid;}
+ 	.listOutputA  {position:absolute;left:110px;top:0;}
+</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		var user;
+		function callApi(options) {
+			var httpApi = 'http://retailedgecn.intel.com/api';
+			var httpsApi = 'https://retailedgecn.intel.com/api';
+			options = $.extend({}, { type: "GET", secure: false, anonymous: false, data: {}, cache: true }, options);
+
+			var xhr = $.ajax({
+				dataType: "json",
+	            url: options.secure ? httpsApi + options.url : httpApi + options.url,
+	            contentType: 'application/json',
+	            type: options.type,
+	            headers: { "PaxUID": options.anonymous ? '' : user.currentUID, 'Mobile': '1' },
+	            data: options.type === "POST" ? JSON.stringify (options.data) : options.data
+			});
+
+			return xhr;
+		}
+		function loadLearnings() {
+			var learningPageControlId = 178;
+			var projectId = 0;
+			callApi({ url: '/activity/mobile', data: { pageControlId: learningPageControlId, projectID: projectId } }).done (function (data) { 
+				var dataText = ""; 
+				var datahref="";
+				data.searchResults.forEach( 
+						function (el) { 
+							//datahref+="http://retailedgecn.intel.com/IREPMobile/Activities/" + el.activityCode +"_mobile/index.html?culturecode=zh-chs&paxuid="+user.currentUID+"</br>";
+							dataText += "<div class='listOutputDiv'><img src=\"http://retailedgecn.intel.com/50/content/images/Mobile/Learning/" + el.activityCode + "_MOBILE.jpg\" /><div class='listOutputA'><a href='http://retailedgecn.intel.com/IREPMobile/Activities/" + el.activityCode + "_mobile/index.html?culturecode=zh-chs&paxuid="+user.currentUID+"'>" + el.name +"</a></div></div>" 
+							//datahref+=datahref;
+						} );
+				$("#listOutput").html(dataText);
+				//$("#myhtml").text(datahref);
+			}); 
+		}
+		function openLearning(url) {
+
+		    $("#frameOutput").css("display","block").attr("src",url + "?culturecode=zh-CHS&paxUID=" + user.currentUID);
+
+		}
+		$(document).ready(function(){
+			eval("var obj = "+IrepUser.getCurrentUID());
+			user={"currentUID":obj.currentUID};
+			//alert(user.currentUID);
+			loadLearnings();
+			window.IrepUser.loaded()
+		});
+		
+	</script>
+</head>
+<body>
+	<div id="listOutput"></div>
+	<!-- <div id="myhtml"></div> -->
+</body>
+</html>

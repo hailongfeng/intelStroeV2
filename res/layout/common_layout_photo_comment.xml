@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_white_edf1f4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white_edf1f4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/txt_pic_upload_comment"
+            android:textColor="@color/base_gray_595959"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_store_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        android:gravity="center"
+        android:background="@color/base_white_ffffff_normal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edt_photo_upload_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="@drawable/common_txt_input_bg"
+            android:hint="@string/edt_comment_default_text"
+            android:lines="4"
+            android:maxLength="140"
+            android:padding="10dip"
+            android:singleLine="false"
+            android:textColor="@color/base_blue_0289b9_normal"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

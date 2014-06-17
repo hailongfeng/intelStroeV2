@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cds="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_bar_menu_item_upload"
+        android:icon="@drawable/action_bar_menu_item_upload"
+        android:orderInCategory="101"
+        android:title="上传"
+        cds:showAsAction="always"/>
+</menu>

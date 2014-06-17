@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_function_diy">
+        <item>门店业绩</item>
+        <item>销量申报</item>
+        <item>产品速查</item>
+        <item>IREP培训</item>
+        <item>门店图片</item>
+        <item>门店积分</item>
+        <item>我的店员</item>
+        <item>门店资料</item>
+    </string-array>
+    <string-array name="main_function_oem">
+        <item>门店业绩</item>
+        <item>销量申报</item>
+        <item>产品速查</item>
+        <item>IREP培训</item>
+        <item>门店图片</item>
+        <item>门店积分</item>
+    </string-array>
+</resources>

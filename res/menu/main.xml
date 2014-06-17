@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cds="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_bar_menu_item_info"
+        android:icon="@drawable/action_bar_menu_item_message_icon"
+        android:orderInCategory="101"
+        android:title="info"
+        cds:showAsAction="ifRoom"/>
+        <item
+        android:id="@+id/action_bar_menu_item_setting"
+        android:icon="@drawable/action_bar_menu_item_more_icon"
+        android:orderInCategory="104"
+        android:title="@string/action_settings"
+        cds:showAsAction="collapseActionView"/>
+ 		<item
+        android:id="@+id/action_bar_menu_item_person_info"
+        android:icon="@drawable/action_bar_menu_item_more_icon"
+        android:orderInCategory="103"
+        android:title="@string/personal_txt_personal_title"
+        cds:showAsAction="collapseActionView"/>
+</menu>

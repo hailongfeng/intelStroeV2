@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.intel.store.view.StoreMyClerkActivity" >
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/new_base_blue_0089d6" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_centerVertical="true"  android:layout_margin="@dimen/padding_small" style="@style/BackButtonStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/store_txt_clerks"
+            android:textColor="@color/base_white_ffffff_normal"
+            android:textSize="20sp"
+             />
+
+        <Button android:layout_centerVertical="true" 
+            android:text="@string/comm_add"
+            android:id="@+id/btn_add_my_clerk"
+             android:layout_margin="@dimen/padding_small" style="@style/RightButtonStyle" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/rl_title"
+        android:id="@+id/list_my_clerk"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/base_gray_e0e6ea"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/base_blue_92cfe4_normal"
+        android:dividerHeight="1.0dip"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <com.intel.store.widget.LoadingView
+        android:id="@id/common_id_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000"
+        android:clickable="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </com.intel.store.widget.LoadingView>
+    
+    
+    <include 
+        android:id="@+id/empty_layout"
+        layout="@layout/empty_layout"
+          android:visibility="gone"
+         />
+</RelativeLayout>

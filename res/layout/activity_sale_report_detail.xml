@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/padding_small"
+                    android:gravity="left"
+                    android:minWidth="@dimen/padding_text_length_small"
+                    android:text="@string/sales_reporte_detail_store_name"
+                    android:textColor="@color/base_three_gray_b1babf"
+                    android:textSize="@dimen/text_middle" />
+
+                <TextView
+                    android:id="@+id/txt_report_store_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:text="XXX門店"
+                    android:textColor="@color/base_three_blue_00aeef"
+                    android:textSize="@dimen/text_middle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/padding_small"
+                    android:gravity="left"
+                    android:minWidth="@dimen/padding_text_length_small"
+                    android:text="@string/sales_reporte_detail_person"
+                    android:textColor="@color/base_three_gray_b1babf"
+                    android:textSize="@dimen/text_middle" />
+
+                <TextView
+                    android:id="@+id/txt_reporter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:text="王经理"
+                    android:textColor="@color/base_three_blue_00aeef"
+                    android:textSize="@dimen/text_middle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/padding_small"
+                    android:gravity="left"
+                    android:minWidth="@dimen/padding_text_length_small"
+                    android:text="@string/sales_reporte_detail_date"
+                    android:textColor="@color/base_three_gray_b1babf"
+                    android:textSize="@dimen/text_middle" />
+
+                <TextView
+                    android:id="@+id/txt_report_time "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:text="2013-06-05"
+                    android:textColor="@color/base_three_blue_00aeef"
+                    android:textSize="@dimen/text_middle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/padding_small"
+                    android:gravity="left"
+                    android:minWidth="@dimen/padding_text_length_small"
+                    android:text="@string/sales_reporte_detail_code"
+                    android:textColor="@color/base_three_gray_b1babf"
+                    android:textSize="@dimen/text_middle" />
+
+                <TextView
+                    android:id="@+id/txt_report_barcode "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:text="7984894651698498"
+                    android:textColor="@color/base_three_blue_00aeef"
+                    android:textSize="@dimen/text_middle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/shape_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_oem_see"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/padding_small"
+                        android:gravity="left"
+                        android:minWidth="@dimen/padding_text_length_small"
+                        android:text="品牌"
+                        android:textColor="@color/base_three_gray_b1babf"
+                        android:textSize="@dimen/text_middle" />
+
+                    <TextView
+                        android:id="@+id/txt_report_broad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:text=" "
+                        android:textColor="@color/base_three_blue_00aeef"
+                        android:textSize="@dimen/text_middle" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/shape_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/padding_small"
+                        android:gravity="left"
+                        android:minWidth="@dimen/padding_text_length_small"
+                        android:text="型号"
+                        android:textColor="@color/base_three_gray_b1babf"
+                        android:textSize="@dimen/text_middle" />
+
+                    <TextView
+                        android:id="@+id/txt_report_type "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:text=" "
+                        android:textColor="@color/base_three_blue_00aeef"
+                        android:textSize="@dimen/text_middle" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@drawable/shape_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_paper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/padding_small"
+                    android:gravity="left"
+                    android:minWidth="@dimen/padding_text_length_small"
+                    android:text="@string/sales_reporte_detail_pic"
+                    android:textColor="@color/base_three_blue_0071c5"
+                    android:textSize="@dimen/text_middle" />
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/iv_paper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/store_list_default"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

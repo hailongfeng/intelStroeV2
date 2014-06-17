@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExerciseDetailActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/new_base_blue_0089d6" >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/BackButtonStyle"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/padding_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="活动详情"
+            android:textColor="@color/base_white_ffffff_normal"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="活动详情" />
+
+        <Button
+            android:id="@+id/btn_exercise_take"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加入活动" />
+    </LinearLayout>
+
+</LinearLayout>

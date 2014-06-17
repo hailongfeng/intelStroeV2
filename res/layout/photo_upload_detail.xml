@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_white_ffffff_normal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/inc_photo_upload_detail_title"
+        layout="@layout/common_title_with_right_btn"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/base_white_ffffff_normal" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_blue_016082_press" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_photo_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_blue_74a2b3_press" >
+
+                    <include layout="@layout/common_layout_photo_type" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_photo_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <include layout="@layout/common_layout_photo_comment" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_photo_taken"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <include layout="@layout/common_layout_photo_taken" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.intel.store.widget.LoadingView
+            android:id="@id/common_id_ll_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#10000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </com.intel.store.widget.LoadingView>
+    </FrameLayout>
+
+</LinearLayout>

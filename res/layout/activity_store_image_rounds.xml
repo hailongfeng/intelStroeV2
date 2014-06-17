@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_white_ffffff_normal"
+    android:orientation="vertical" >
+
+	<TextView 
+	    android:padding="@dimen/padding_small"
+	    android:background="@color/v3_yellow"
+	    android:layout_height="wrap_content" 
+	    android:layout_width="fill_parent"
+	    android:id="@+id/tv_title">
+	    
+	</TextView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@id/common_id_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/shape_line"
+            android:dividerHeight="1dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dip"
+            android:fastScrollEnabled="true"
+            android:horizontalSpacing="15dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="15dp" >
+        </ListView>
+
+        <com.intel.store.widget.LoadingView
+            android:id="@id/common_id_ll_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#10000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </com.intel.store.widget.LoadingView>
+
+        <include
+            android:id="@id/common_id_empty_layout"
+            layout="@layout/empty_layout"
+             />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/new_base_blue_0089d6" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_centerVertical="true"  android:layout_margin="@dimen/padding_small" style="@style/BackButtonStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/clerk_txt_title_add"
+            android:textColor="@color/base_white_ffffff_normal"
+            android:textSize="20sp"
+             />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_edt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <include
+                android:layout_height="match_parent"
+                layout="@layout/store_myclerk_editer" />
+
+                <Button
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                    android:background="@drawable/login_btn_bg_selector"
+                    android:gravity="center"
+                    android:text="@string/btn_change"
+                    android:textColor="@color/base_white_ffffff_normal" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.intel.store.widget.LoadingView
+        android:id="@id/common_id_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#10000000"
+        android:clickable="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </com.intel.store.widget.LoadingView>
+
+</RelativeLayout>

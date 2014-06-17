@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.    -->
+
+    <style name="AppBaseTheme" parent="@style/CustomActionBarTheme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
+     <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/MyActionBar</item>
+       	<item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_holo_light</item>
+    </style>
+     <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="background">@drawable/actionbar_title_bg</item>
+        <item name="logo">@drawable/store_action_bar_home_logo</item>
+        
+    </style>
+    
+        <!-- ActionBar title style -->
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/base_three_blue_0071c5</item>
+    </style>
+    
+    
+    
+    
+    
+    <!-- 登陆页面RadioButton的样式 -->
+    <style name="MyRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/login_rbt_bg_selector</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:textColor">@color/base_white_ffffff_normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 登陆页面CheckBox的样式 -->
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:minHeight">18dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:textColor">@color/base_three_blue_00aeef</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <!-- 销量上报CheckBox的样式 -->
+    <style name="MyCheckBox2" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox2_selector</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:minHeight">18dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:textColor">@color/base_gray_595959</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- Wifi CheckBox的样式 -->
+    <style name="MyCheckBoxWifi" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:minHeight">18dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="PopwindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/pop_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_fade_out</item>
+    </style>
+    <!-- 返回按钮button的样式 -->
+    <style name="BackButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding_small</item>
+        <item name="android:paddingTop">@dimen/padding_smaller</item>
+        <item name="android:paddingBottom">@dimen/padding_smaller</item>
+        <item name="android:textColor">@color/base_white_ffffff_normal</item>
+        <item name="android:text">@string/comm_back</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/btn_back</item>
+    </style>
+    <!-- RightButtonStyle的样式 -->
+    <style name="RightButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/padding_smaller</item>
+        <item name="android:paddingBottom">@dimen/padding_smaller</item>
+        <item name="android:textColor">@color/base_white_ffffff_normal</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/btn_right</item>
+    </style>
+
+    <!-- 二级title标签button的样式 -->
+    <style name="MyTextOfTitleMiddle">
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:paddingRight">@dimen/padding_medium</item>
+        <item name="android:paddingBottom">@dimen/padding_smaller</item>
+        <item name="android:paddingTop">@dimen/padding_smaller</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/base_white_ffffff_normal</item>
+        <item name="android:background">@color/new_base_blue_0071c5</item>
+    </style>
+
+    <style name="MyTextOfTitleShort">
+        <item name="android:paddingBottom">@dimen/padding_smaller</item>
+        <item name="android:paddingTop">@dimen/padding_smaller</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/base_white_ffffff_normal</item>
+        <item name="android:background">@color/new_base_blue_0071c5</item>
+    </style>
+
+    <style name="MyTextOfPassword">
+        <item name="android:paddingBottom">@dimen/padding_smaller</item>
+        <item name="android:paddingTop">@dimen/padding_smaller</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#585858</item>
+    </style>
+    
+	<style name="AnimBottom" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+	</style>
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+</resources>

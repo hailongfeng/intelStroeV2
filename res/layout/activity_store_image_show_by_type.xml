@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:background="@color/base_white_ffffff_normal"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/new_base_blue_0089d6" >
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/BackButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/padding_small" />
+
+            <TextView
+                android:id="@+id/txt_title_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text=""
+                android:textColor="#F3F3F3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_photo_add"
+                style="@style/RightButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/padding_small"
+                android:text="@string/txt_take_picture" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/v3_yellow"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_small"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+        <TextView
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:id="@+id/txt_require"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_take_picture_require" />
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/txt_require_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_take_picture_upload" />
+            </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <GridView
+                android:id="@+id/grid_store_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:dividerHeight="0dip"
+                android:fadingEdgeLength="0dip"
+                android:fastScrollEnabled="true"
+                android:horizontalSpacing="@dimen/padding_small"
+                 android:verticalSpacing="@dimen/padding_small"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+       			android:stretchMode="columnWidth"
+                android:scrollbars="none"/>
+            <TextView
+                android:id="@+id/txt_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/empty"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:visibility="gone" />
+    <com.intel.store.widget.LoadingView
+        android:id="@id/common_id_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#10000000"
+        android:clickable="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </com.intel.store.widget.LoadingView>
+        </FrameLayout>
+
+</LinearLayout>

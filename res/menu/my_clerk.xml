@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cds="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_bar_menu_item_add"
+        android:icon="@drawable/action_bar_menu_item_add_clerk_icon"
+        android:orderInCategory="101"
+        android:title="添加店员"
+        cds:showAsAction="always"/>
+</menu>

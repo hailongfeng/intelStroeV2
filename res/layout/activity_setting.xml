@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:switch="http://schemas.android.com/apk/res/com.intel.store.widget"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/base_white_ffffff_normal">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:orientation="vertical" >
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:background="@drawable/shape_line" />
+    <LinearLayout
+        android:id="@+id/linear_about_app_select"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/setting_about_app"
+            android:textColor="@color/v3_black"
+            android:textSize="@dimen/text_middle" />
+
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/arraw_gray_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_clear_crash_select"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/setting_clear_crash"
+            android:textColor="@color/v3_black"
+            android:textSize="@dimen/text_middle" />
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/arraw_gray_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:background="@drawable/shape_line" />
+  	<LinearLayout
+  	    android:layout_height="wrap_content"
+  	    android:layout_width="fill_parent"
+  	    android:orientation="vertical">
+   	<LinearLayout
+        android:id="@+id/linear_auto_login_select"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/setting_auto_login"
+            android:textColor="@color/v3_black"
+            android:textSize="@dimen/text_middle" />
+        
+        <com.intel.store.widget.SwitchButton
+            android:id="@+id/sb_auto_login"
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+      <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+  	   <LinearLayout
+        android:id="@+id/linear_gps_locale_select"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/one_operator_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/setting_gps_locate"
+            android:textColor="@color/v3_black"
+            android:textSize="@dimen/text_middle" />
+        <com.intel.store.widget.SwitchButton
+            android:id="@+id/sb_gps_locate"
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+   	
+
+	</LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    <com.intel.store.widget.LoadingView
+        android:id="@id/common_id_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </com.intel.store.widget.LoadingView>
+
+</FrameLayout>
